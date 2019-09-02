@@ -2,8 +2,8 @@
 const resultsTemplate = Handlebars.compile(
   document.getElementById('results-template').innerHTML
   );
-Handlebars.registerHelper('convert-sub', function(number) {
-  return number.toLocaleString() + " subscribers";
+Handlebars.registerHelper('convert-num', function(number) {
+  return number.toLocaleString();
 });
 
 $('#reddit-form').submit(async function(e) {

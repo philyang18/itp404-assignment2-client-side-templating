@@ -11,15 +11,15 @@
     {{#each results.data.children}}
       <div class="result-div row">
         <div class="sr-score col-lg-1 col-md-1 col-sm-2">
-          {{data.score}}
+          {{convert-num data.score}}
         </div>
         <div class="title-div col-lg-11 col-md-11 col-sm-10">
           <a class="sr-title col-12" href="{{data.url}}" target="_blank">{{data.title}}</a>
           <p class="sr-author col-12">Posted by u/{{data.author}}</p>
-          <p class="sr-subscribers">{{convert-sub data.subreddit_subscribers}}</p>
+          <p class="sr-subscribers">{{convert-num data.subreddit_subscribers}} subscribers</p>
           <p class="sr-comments">
             {{#if data.num_comments}}
-              {{data.num_comments}} comments 
+              {{convert-num data.num_comments}} comments 
             {{else}}
               No comments
             {{/if}}

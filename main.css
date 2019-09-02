@@ -37,6 +37,7 @@ form,button {
   padding-top: 28px;
   font-weight: bolder;
   font-size: 16px;
+  word-wrap: break-word;
 }
 .title-div {
   padding-top: 5px;
